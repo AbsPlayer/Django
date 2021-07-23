@@ -1,0 +1,37 @@
+{% extends 'layout/author_basic.html' %}
+{% load i18n %}
+{% load thumbnail %}
+{% block content %}
+<h1 class="display-5 text-center">{% trans 'Мои объявления - редактирование' %}</h1>
+{% if advertisements_list %}
+    <ul class="list-unstyled">
+        {% for advertisement in advertisements_list %}
+            <li class="media my-2 p-3 border">
+                <a href="/authors/advertisement/{{advertisement.id}}">{{advertisement.title}}</a>
+                <img src="{{ advertisement.photo|thumbnail_url:'default' }}">
+                {{advertisement.price}} |
+                {{advertisement.rubric}}
+            </li>
+        {% endfor %}
+    </ul>
+    <div class="pagination">
+        <span class="step-links">
+            {% if page_obj.has_previous %}
+                <a href="?page=1">&laquo; first</a>
+                <a href="?page={{ page_obj.previous_page_number }}">previous</a>
+            {% endif %}
+
+            <span class="current">
+                Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}.
+            </span>
+
+            {% if page_obj.has_next %}
+                <a href="?page={{ page_obj.next_page_number }}">next</a>
+                <a href="?page={{ page_obj.paginator.num_pages }}">last &raquo;</a>
+            {% endif %}
+        </span>
+    </div>
+{% else %}
+    {{message}}
+{% endif %}
+{% endblock %}

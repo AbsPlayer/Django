@@ -1,0 +1,20 @@
+{% extends 'layout/basic.html' %}
+{% load i18n %}
+{% load thumbnail %}
+{% block content %}
+    <div>
+        <h1 class="display-5 text-center">{% trans 'Последние добавленные объявления' %}</h1>
+        {% if advertisements_list %}
+            <ul class="list-unstyled">
+                {% for advertisement in advertisements_list %}
+                    <li class="media my-2 p-3 border">
+                        <a href="/advertisement/{{advertisement.id}}">{{advertisement.title}}</a>
+                        <img src="{{ advertisement.photo|thumbnail_url:'default' }}">
+                        {{advertisement.price}} |
+                        {{advertisement.rubric}}
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </div>
+{% endblock %}

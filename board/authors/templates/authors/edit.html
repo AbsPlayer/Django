@@ -1,0 +1,14 @@
+{% extends 'layout/author_basic.html' %}
+{% load i18n %}
+{% block content %}
+  <h1 class="display-5 text-center">{% trans 'Редактирование профиля' %}</h1>
+  {% if form %}
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">{% trans 'Сохранить' %}</button>
+  </form>
+  {% else %}
+    {{message}}
+  {% endif %}
+{% endblock %}

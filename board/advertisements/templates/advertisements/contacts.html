@@ -1,0 +1,9 @@
+{% extends 'layout/basic.html' %}
+{% load i18n %}
+{% block content %}
+<h1 class="display-5 text-center">{% trans 'Контакты' %}</h1>
+<ul>
+    <li>{% trans 'Телефон' %}: {{phone}}</li>
+    <li>EMail: {{email}}</li>
+</ul>
+{% endblock %}

@@ -1,0 +1,37 @@
+{% load i18n %}
+{% load bootstrap4 %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{% trans 'Личный кабинет - Доска объявлений' %}</title>
+    {% bootstrap_css %}
+    {% bootstrap_javascript jquery='slim' %}
+</head>
+<body class="container-fluid">
+    <header class="mb-4">
+        <div class="row">
+            <ul class="col nav justify-content-end border">
+                <li class="nav-item"> <a class="nav-link" href="{% url 'main' %}">{% trans 'Главная' %}</a></li>
+                {% if request.user.is_authenticated %}
+                <li class="nav-item"> <a class="nav-link" href="{% url 'edit_author' %}">{% trans 'Редактирование профиля' %}</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{% url 'author_advertisements' %}">{% trans 'Мои объявления' %}</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{% url 'advertisement_add' %}">{% trans 'Добавить объявление' %}</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{% url 'logout' %}">{% trans 'Выйти' %}</a></li>
+                {% else %}
+                <li class="nav-item"> <a class="nav-link" href="{% url 'password_reset' %}">{% trans 'Восстановление пароля' %}</a></li>
+                {% endif %}
+            </ul>
+        </div>
+    </header>
+    <div class="row">
+        <section class="col border py-2">
+            {% bootstrap_messages %}
+            {% block content %}
+            {% endblock %}
+        </section>
+    </div>
+</body>
+</html>

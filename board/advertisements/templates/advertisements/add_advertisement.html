@@ -1,0 +1,13 @@
+{% extends 'layout/author_basic.html' %}
+{% load i18n %}
+{% block content %}
+<h1 class="display-5 text-center">{% trans 'Добавление объявления' %}</h1>
+{% if author %}
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">{% trans 'Добавить объявление' %}</button>
+</form>
+{% endif %}
+{{ message }}
+{% endblock %}

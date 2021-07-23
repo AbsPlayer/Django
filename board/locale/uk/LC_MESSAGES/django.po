@@ -1,0 +1,287 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-28 16:30+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != "
+"11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % "
+"100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || "
+"(n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+
+#: .\advertisements\apps.py:8
+msgid "advertisements"
+msgstr "оголошення"
+
+#: .\advertisements\models.py:7 .\advertisements\models.py:24
+#, fuzzy
+#| msgid "Объявление"
+msgid "объявление"
+msgstr "Оголошення"
+
+#: .\advertisements\models.py:8
+msgid "описание"
+msgstr "опис"
+
+#: .\advertisements\models.py:9
+msgid "цена"
+msgstr "ціна"
+
+#: .\advertisements\models.py:10
+msgid "создано"
+msgstr "створено"
+
+#: .\advertisements\models.py:11
+msgid "опубликовано"
+msgstr "опубліковано"
+
+#: .\advertisements\models.py:14 .\advertisements\models.py:32
+#: .\advertisements\models.py:36
+msgid "статус"
+msgstr "статус"
+
+#: .\advertisements\models.py:16 .\advertisements\models.py:43
+#: .\advertisements\models.py:47
+msgid "тип объявления"
+msgstr "тип оголошення"
+
+#: .\advertisements\models.py:18 .\advertisements\models.py:69
+msgid "автор"
+msgstr "автор"
+
+#: .\advertisements\models.py:20 .\advertisements\models.py:76
+#: .\advertisements\models.py:80
+msgid "рубрика"
+msgstr "рубрика"
+
+#: .\advertisements\models.py:23
+msgid "объявления"
+msgstr "оголошення"
+
+#: .\advertisements\models.py:35
+msgid "статусы"
+msgstr "статуси"
+
+#: .\advertisements\models.py:46
+msgid "типы объявлений"
+msgstr "тип оголошень"
+
+#: .\advertisements\models.py:55
+msgid "имя"
+msgstr "ім'я"
+
+#: .\advertisements\models.py:56
+msgid "фамилия"
+msgstr "призвище"
+
+#: .\advertisements\models.py:58
+msgid "номер телефона"
+msgstr "номер телефона"
+
+#: .\advertisements\models.py:59
+msgid "веб-страница"
+msgstr "веб-сторінка"
+
+#: .\advertisements\models.py:65
+msgid "Прочее"
+msgstr "Інше"
+
+#: .\advertisements\models.py:68
+msgid "авторы"
+msgstr "автори"
+
+#: .\advertisements\models.py:79
+msgid "рубрики"
+msgstr "рубрики"
+
+#: .\advertisements\templates\advertisements\about.html:4
+#: .\advertisements\templates\layout\basic.html:18 .\advertisements\views.py:68
+msgid "О нас"
+msgstr "Про нас"
+
+#: .\advertisements\templates\advertisements\add_advertisement.html:4
+msgid "Добавление объявления"
+msgstr "Додавання оголошення"
+
+#: .\advertisements\templates\advertisements\add_advertisement.html:8
+#: .\authors\templates\layout\author_basic.html:19
+msgid "Добавить объявление"
+msgstr "Додати оголошення"
+
+#: .\advertisements\templates\advertisements\advertisement_detail.html:4
+msgid "Объявление"
+msgstr "Оголошення"
+
+#: .\advertisements\templates\advertisements\advertisement_detail.html:10
+msgid "Цена"
+msgstr "Ціна"
+
+#: .\advertisements\templates\advertisements\advertisement_detail.html:13
+msgid "Описание"
+msgstr "Опис"
+
+#: .\advertisements\templates\advertisements\advertisement_detail.html:19
+msgid "Тип объявления"
+msgstr "Тип оголошення"
+
+#: .\advertisements\templates\advertisements\advertisement_detail.html:22
+msgid "Рубрика"
+msgstr "Рубрика"
+
+#: .\advertisements\templates\advertisements\advertisement_detail.html:25
+msgid "Автор"
+msgstr "Автор"
+
+#: .\advertisements\templates\advertisements\advertisement_detail.html:28
+#: .\advertisements\templates\advertisements\contacts.html:4
+#: .\advertisements\templates\layout\basic.html:19 .\advertisements\views.py:57
+msgid "Контакты"
+msgstr "Контакти"
+
+#: .\advertisements\templates\advertisements\advertisement_edit.html:4
+msgid "Редактирование объявления"
+msgstr "Редагування оголошення"
+
+#: .\advertisements\templates\advertisements\advertisement_edit.html:8
+#: .\authors\templates\authors\edit.html:10
+#: .\authors\templates\authors\password_reset_confirm.html:10
+msgid "Сохранить"
+msgstr "Зберегти"
+
+#: .\advertisements\templates\advertisements\advertisements.html:5
+msgid "Список объявлений"
+msgstr "Перелік оголошень"
+
+#: .\advertisements\templates\advertisements\advertisements.html:35
+#: .\advertisements\views.py:155
+msgid "Объявлений нет"
+msgstr "Оголошень немає"
+
+#: .\advertisements\templates\advertisements\contacts.html:6
+msgid "Телефон"
+msgstr "Телефон"
+
+#: .\advertisements\templates\advertisements\index.html:7
+msgid "Главное окно сайта"
+msgstr "Головне вікно сайта"
+
+#: .\advertisements\templates\advertisements\index.html:10
+msgid "Последние добавленные объявления"
+msgstr "Останні додані оголошення"
+
+#: .\advertisements\templates\layout\basic.html:13 .\advertisements\views.py:45
+msgid "Доска объявлений"
+msgstr "Дошка оголошень"
+
+#: .\advertisements\templates\layout\basic.html:17 .\advertisements\views.py:44
+#: .\authors\templates\layout\author_basic.html:15
+msgid "Главная"
+msgstr "Головна"
+
+#: .\advertisements\templates\layout\basic.html:21
+msgid "Добро пожаловать"
+msgstr "Вітаємо"
+
+#: .\advertisements\templates\layout\basic.html:22
+#: .\authors\templates\layout\author_basic.html:20
+msgid "Выйти"
+msgstr "Вийти"
+
+#: .\advertisements\templates\layout\basic.html:24
+msgid "Войти"
+msgstr "Увійти"
+
+#: .\advertisements\templates\layout\basic.html:25
+#: .\authors\templates\authors\register.html:9
+msgid "Регистрация"
+msgstr "Реєстрація"
+
+#: .\advertisements\views.py:69
+msgid "Региональная доска объявлений"
+msgstr "Регіональна дошка оголошень"
+
+#: .\advertisements\views.py:70
+msgid "На сайте можно дать объявление о продаже/покупке/аренде"
+msgstr "На сайті можна дати оголошення про продаж/покупку/оренду"
+
+#: .\advertisements\views.py:85
+msgid "Объявления"
+msgstr "Оголошення"
+
+#: .\advertisements\views.py:131
+msgid "Добавлено"
+msgstr "Додано"
+
+#: .\advertisements\views.py:153 .\authors\views.py:81
+msgid "Вы не зарегистрированы как автор"
+msgstr "Ви не зареєстровані як автор"
+
+#: .\advertisements\views.py:185 .\authors\views.py:93
+msgid "Сохранено"
+msgstr "Збережено"
+
+#: .\authors\templates\authors\author_advertisements.html:5
+msgid "Мои объявления - редактирование"
+msgstr "Мої оголошення - редагування"
+
+#: .\authors\templates\authors\edit.html:5
+#: .\authors\templates\layout\author_basic.html:17
+msgid "Редактирование профиля"
+msgstr "Редагування профілю"
+
+#: .\authors\templates\authors\login.html:9
+msgid "Вход в личный кабинет"
+msgstr "Вхід до приватного кабінета"
+
+#: .\authors\templates\authors\password_reset_confirm.html:5
+msgid "Изменение пароля"
+msgstr "Зміна пароля"
+
+#: .\authors\templates\authors\password_reset_confirm.html:6
+msgid "Введите новый пароль"
+msgstr "Введіть новий пароль"
+
+#: .\authors\templates\authors\password_reset_done.html:7
+msgid "Письмо со ссылкой для сброса пароля отправлено на указанный email"
+msgstr "Лист з посиланням для скидання пароля відправлено на вказанний email"
+
+#: .\authors\templates\authors\register.html:14
+msgid "Зарегистрироваться"
+msgstr "Зареєструватися"
+
+#: .\authors\templates\authors\reset_password.html:5
+#: .\authors\templates\layout\author_basic.html:22
+msgid "Восстановление пароля"
+msgstr "Відновлення пароля"
+
+#: .\authors\templates\authors\reset_password.html:6
+msgid "Введите email, указанный при регистрации"
+msgstr "Введіть email, що був вказаний при реєстрації"
+
+#: .\authors\templates\authors\reset_password.html:10
+msgid "Сбросить пароль"
+msgstr "Скинути пароль"
+
+#: .\authors\templates\authors\reset_subject.txt:1
+msgid "запрос на сброс пароля"
+msgstr "запит на скидання пароля"
+
+#: .\authors\templates\layout\author_basic.html:10
+msgid "Личный кабинет - Доска объявлений"
+msgstr "Приватний кабінет - Дошка оголошень"
+
+#: .\authors\templates\layout\author_basic.html:18
+msgid "Мои объявления"
+msgstr "Мої оголошення"

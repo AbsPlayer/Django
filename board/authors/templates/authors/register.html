@@ -1,0 +1,16 @@
+{% extends 'layout/author_basic.html' %}
+{% load bootstrap4 %}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+{% bootstrap_messages %}
+{% load i18n %}
+{% block content %}
+  <h1 class="display-5 text-center">{% trans 'Регистрация' %}</h1>
+  <form method="post">
+    {% csrf_token %}
+    {% bootstrap_form form %}
+    {% buttons %}
+    <button type="submit">{% trans 'Зарегистрироваться' %}</button>
+    {% endbuttons %}
+  </form>
+{% endblock %}

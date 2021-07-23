@@ -1,0 +1,11 @@
+{% extends 'layout/basic.html' %}
+{% load i18n %}
+{% block content %}
+<h3>{% trans 'Редактирование объявления' %}</h3>
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">{% trans 'Сохранить' %}</button>
+  {{message}}
+</form>
+{% endblock %}

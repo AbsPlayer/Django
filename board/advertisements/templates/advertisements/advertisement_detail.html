@@ -1,0 +1,32 @@
+{% extends 'layout/basic.html' %}
+{% load i18n %}
+{% block content %}
+<h2 class="display-5 text-center">{{object.title}}</h2>
+<div>
+    <div>
+        {% trans 'Цена' %}: {{object.price}}
+    </div>
+    <div>
+        {% trans 'Описание' %}: {{object.description}}
+    </div>
+    <div>
+      {% if object.photo %}
+        <img src="{{object.photo.url}}">
+      {% else %}
+        {% trans 'Изображение: отсутствует' %}
+      {% endif %}
+    </div>
+    <div>
+        {% trans 'Тип объявления' %}: {{object.type}}
+    </div>
+    <div>
+        {% trans 'Рубрика' %}: {{object.rubric}}
+    </div>
+    <div>
+        {% trans 'Автор' %}: {{object.author}}
+    </div>
+    <div>
+        {% trans 'Контакты' %}: {{object.author.phone_number}}
+    </div>
+</div>
+{% endblock %}
